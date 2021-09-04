@@ -8,26 +8,31 @@
     <title>Centro Universitario Celsus</title>
 
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <a href="https://www.unicuc.mx">UNICUC</a>
-            <button type="button"></button>
-            <ul>
-                <li>Inicio</li>
-                <li>Cursos</li>
-                <li>Docentes</li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://www.unicuc.mx">UNICUC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Docentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <div class="banner">
         <div class="container">
-            <div>
+            <div class="carousel slide" data-ride="carousel">
                 <!-- Menu de navegacion del carrusel-->
                 <ul>
                     <li></li>
@@ -36,23 +41,23 @@
                 </ul>
 
                 <!-- Capa que contiene las imagenes-->
-                <div>
-                    <div>
-                        <img src="" alt="Estudiantes">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/estudiantes.png" alt="Estudiantes">
                         <div>
                             <h3>Nuestros Estudiantes</h3>
                             <p>Contamos con una excelente comunidad estudiantil</p>
                         </div>
                     </div>
-                    <div>
-                        <img src="" alt="Nuestros Egresados">
+                    <div class="carousel-item">
+                        <img src="img/egresados.jpg" alt="Nuestros Egresados">
                         <div>
                             <h3>Nuestros Egresados</h3>
                             <p>Contamos con una excelente comunidad estudiantil</p>
                         </div>
                     </div>
-                    <div>
-                        <img src="" alt="Nuestros Profesores">
+                    <div class="carousel-item">
+                        <img src="img/profesores.jpg" alt="Nuestros Profesores">
                         <div>
                             <h3>Nuestros Profesores</h3>
                             <p>Contamos con una excelente comunidad estudiantil</p>
@@ -63,9 +68,23 @@
 
             </div>
         </div>
-
     </div>
 
+    <main>
+        <div class="container">
+            <section>
+                <article>
+                    <div></div>
+                </article>
+                <article>
+                    <div></div>
+                </article>
+                <article>
+                    <div></div>
+                </article>
+            </section>
+        </div>
+    </main>
 
 </body>
 
