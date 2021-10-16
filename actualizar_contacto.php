@@ -29,10 +29,10 @@
         <div class="container">
             <h3>Datos del contacto</h3>
             <hr>
-            <form action="controllers/ctr_contactos.php?opc=1" method="post">
+            <form action="controllers/ctr_contactos.php?opc=3&id=<?php echo $_GET['id']?>" method="post">
                 <div class="form-group">
                     <label for="txtNombre">Nombre</label>
-                    <input type="text" name="txtNombre" id="txtNombre" class="form-control" placeholder="Ingrese su nombre">
+                    <input type="text" name="txtNombre" id="txtNombre" class="form-control" placeholder="Ingrese su nombre" value="<?php echo $_GET['nombre']?>">
                 </div>
 
                 <div class="form-group">
